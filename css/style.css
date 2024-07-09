@@ -33,6 +33,10 @@ small {
   margin: .5rem 0;
 }
 
+.pColor{
+  color: red;
+}
+
 .btn-wrapper {
   flex: 1;
 }
