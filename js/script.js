@@ -35,3 +35,11 @@ btn3.addEventListener('click', () => {
 btn4.addEventListener('click', () =>  {
   output4.classList.add('pColor')
 });
+
+const messageInput = document.getElementById('message');
+
+btn5.addEventListener('click', () => {
+  const messageValue = messageInput.value;
+  console.log(messageValue);
+});
+      
