@@ -7,17 +7,13 @@ const btn4 = document.getElementById("btn4")
 const btn5 = document.getElementById("btn5")
 const paragraphs = document.querySelectorAll('p')
 const output1 = document.getElementById("output1")
+const output3 = document.getElementById("output3")
+const output4 = document.getElementById("output4")
 
 btn1.addEventListener('click', () =>  {
-  paragraphs.forEach((paragraph) => {
-    paragraph.classList.add('pColor')
-  });
+    output1.classList.add('pColor')
 });
 
-btn2.addEventListener('click', () =>  {
-  const secondP =document.createElement('p')
-  secondP.textContent = "Hello World"
-});
 
 btn2.addEventListener('click', () => {
   const span = document.createElement('span');
@@ -29,5 +25,13 @@ btn2.addEventListener('click', () => {
   p.insertAdjacentElement('afterend', span);
 });
 
+btn3.addEventListener('click', () => {
+  const smallText = document.getElementsByClassName('small-text');
+  if(smallText){
+ smallText.classList.remove('small-text');
+  }
+});
 
-
+btn4.addEventListener('click', () =>  {
+  output4.classList.add('pColor')
+});
